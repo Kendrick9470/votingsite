@@ -1,0 +1,177 @@
+#voting-bar {
+  width: 100%;
+  max-width: 479px;
+  height: 25px;
+  border: 1px solid #000;
+  position: relative;
+  background-color:  skyblue;
+  margin-left: -10px;
+  margin-top: 55px;
+}
+
+
+.votes{
+  color:#0077b6;
+  margin-top: 10px;
+}
+
+.Btn1 a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.win-vote{
+  margin-top: 10px;
+}
+
+#filler {
+  width: 3%;
+  height: 100%;
+  background-color: #3498db;
+  position: absolute;
+}
+
+.header {
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  font-weight: 400;
+  color: #0077b6;
+  margin-top: 5px;
+  
+}
+
+.para{
+    font-size: 0.85em;
+    font-family: 'Lobster', cursive;
+    margin-top: 10px;
+    color: #0077b6;
+
+
+}
+
+.Btn-env{
+  margin-left: 5px;
+}
+
+.Btn-insta {
+  margin-left: 5px;
+
+}
+
+.Btn1 {
+  position: absolute;
+  margin-left: -100px;
+  background-color: rgb(0, 128, 77);
+  color: #fff;
+  font-size: smaller;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Btn1:hover{
+  background-color: lightgreen;
+  color: black;
+
+}
+
+
+.Btn2{
+  position: absolute;
+  margin-left: 10px;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  font-size: smaller;
+  transition: background-color 0.3s, color o0.3s;
+
+}
+
+.Btn2:hover{
+  background-color: pink;
+  color: black;
+}
+
+
+.img1{
+  margin-top: 20px;
+  width: 50px;
+}
+
+.powered {
+  color: #0077b6;
+}
+
+.powered-p{
+  text-align: center;
+  margin-top: 20px;
+
+
+}
+
+
+
+@media (max-width:768px){
+  .powered-p {
+    align-items: center;
+    font-size: 0.70em;
+    text-align: center;
+    margin-left: 260px;
+    width: 100%;
+    max-width:200px ;
+
+  }
+
+ 
+
+
+  .header{
+    font-weight: 150px;
+  }
+
+  .Btn1{
+    max-width: 100px;
+    width: 100%;
+    font-size: x-small;
+  }
+
+  .Btn2{
+    max-width: 100px;
+    width: 100%;
+    font-size: x-small;
+
+  }
+
+  
+
+  .main{
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 210px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -200px;
+    margin-top: 50px;
+    background-color: white;
+  }
+
+}
+
+ 
+p{
+    font-size: 0.85em;
+    font-family: 'Lobster', cursive;
+}
+
+.main {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    max-width:480px;
+    width:100% ;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 220px;
+    margin-top: 50px;
+    background-color: white;
+   
+}
